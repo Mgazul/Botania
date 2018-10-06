@@ -20,12 +20,10 @@ import vazkii.botania.client.model.FloatingFlowerModel;
 import vazkii.botania.client.model.GunModel;
 import vazkii.botania.client.model.LexiconModel;
 import vazkii.botania.client.model.PlatformModel;
-import vazkii.botania.common.integration.buildcraft.TriggerManaLevel;
 import vazkii.botania.common.item.ItemSparkUpgrade;
 import vazkii.botania.common.item.equipment.bauble.ItemFlightTiara;
 
 import java.util.EnumMap;
-import java.util.Map;
 
 public class MiscellaneousIcons {
 
@@ -52,7 +50,6 @@ public class MiscellaneousIcons {
 	terrasteelHelmWillIcon;
 
 	public TextureAtlasSprite[] sparkUpgradeIcons;
-	public final Map<TriggerManaLevel.State, TextureAtlasSprite> manaLevelTriggerIcons = new EnumMap<>(TriggerManaLevel.State.class);
 	public TextureAtlasSprite[] tiaraWingIcons;
 	public TextureAtlasSprite[] thirdEyeLayers;
 
@@ -137,10 +134,6 @@ public class MiscellaneousIcons {
 
 		manaDetectorIcon = IconHelper.forName(evt.getMap(), "triggers/manaDetector", "items");
 		runeAltarTriggerIcon = IconHelper.forName(evt.getMap(), "triggers/runeAltarCanCraft", "items");
-
-		for (TriggerManaLevel.State s : TriggerManaLevel.State.values()) {
-			manaLevelTriggerIcons.put(s, IconHelper.forName(evt.getMap(), "triggers/mana" + WordUtils.capitalizeFully(s.name()), "items"));
-		}
 
 		tiaraWingIcons = new TextureAtlasSprite[ItemFlightTiara.WING_TYPES];
 		for (int i = 0; i < tiaraWingIcons.length; i++) {

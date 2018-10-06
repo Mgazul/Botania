@@ -48,7 +48,6 @@ import vazkii.botania.common.core.loot.LootHandler;
 import vazkii.botania.common.core.proxy.IProxy;
 import vazkii.botania.common.crafting.*;
 import vazkii.botania.common.entity.*;
-import vazkii.botania.common.integration.buildcraft.StatementAPIPlugin;
 import vazkii.botania.common.lexicon.LexiconData;
 import vazkii.botania.common.lib.LibMisc;
 import vazkii.botania.common.network.GuiHandler;
@@ -60,8 +59,6 @@ import vazkii.botania.common.world.WorldTypeSkyblock;
 public class Botania {
 
 	public static boolean gardenOfGlassLoaded = false;
-
-	public static boolean bcApiLoaded = false;
 	public static boolean bloodMagicLoaded = false;
 
 	@Instance(LibMisc.MOD_ID)
@@ -77,7 +74,6 @@ public class Botania {
 
 		gardenOfGlassLoaded = Loader.isModLoaded("gardenofglass");
 
-		bcApiLoaded = Loader.isModLoaded("buildcraftlib");
 		bloodMagicLoaded = Loader.isModLoaded("bloodmagic"); // Psh, noob
 
 		BotaniaAPI.internalHandler = new InternalMethodHandler();
@@ -127,8 +123,6 @@ public class Botania {
 
 		FMLInterModComms.sendMessage("projecte", "interdictionblacklist", EntityManaBurst.class.getCanonicalName());
 
-		if(Botania.bcApiLoaded)
-			new StatementAPIPlugin();
 		proxy.init(event);
 	}
 
