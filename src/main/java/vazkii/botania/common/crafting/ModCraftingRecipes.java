@@ -100,8 +100,6 @@ public final class ModCraftingRecipes {
 	public static ResourceLocation recipeFertilizerPowder;
 	public static ResourceLocation recipeFerilizerDye;
 	public static ResourceLocation recipeLivingwoodTwig;
-	public static ResourceLocation recipeDirtRod;
-	public static ResourceLocation recipeTerraformRod;
 	public static ResourceLocation recipeRedstoneSpreader;
 	public static ResourceLocation recipeManaMirror;
 	public static ResourceLocation recipeManasteelHelm;
@@ -150,7 +148,6 @@ public final class ModCraftingRecipes {
 	public static ResourceLocation recipeSunnyQuartz;
 	public static ResourceLocation recipeAlfPortal;
 	public static ResourceLocation recipeNaturaPylon;
-	public static ResourceLocation recipeWaterRod;
 	public static ResourceLocation recipeElementiumHelm;
 	public static ResourceLocation recipeElementiumChest;
 	public static ResourceLocation recipeElementiumLegs;
@@ -191,7 +188,6 @@ public final class ModCraftingRecipes {
 	public static ResourceLocation recipeVirusZombie;
 	public static ResourceLocation recipeVirusSkeleton;
 	public static ResourceLocation recipeReachRing;
-	public static ResourceLocation recipeSkyDirtRod;
 	public static ResourceLocation recipeSpawnerClaw;
 	public static ResourceLocation recipeCraftCrate;
 	public static ResourceLocation recipePlaceholder;
@@ -234,7 +230,6 @@ public final class ModCraftingRecipes {
 	public static ResourceLocation recipeDreamwoodTwig;
 	public static ResourceLocation recipeMonocle;
 	public static ResourceLocation recipeClip;
-	public static ResourceLocation recipeCobbleRod;
 	public static ResourceLocation recipeSmeltRod;
 	public static ResourceLocation recipeWorldSeed;
 	public static ResourceLocation recipeSpellCloth;
@@ -517,8 +512,6 @@ public final class ModCraftingRecipes {
 		recipeAnimatedTorch = ModBlocks.animatedTorch.getRegistryName();
 		recipeManaBlaster = ModItems.manaGun.getRegistryName();
 		recipesAltGrassSeeds = allOfGroup(ModItems.grassSeeds.getRegistryName());
-		recipeDirtRod = ModItems.dirtRod.getRegistryName();
-		recipeTerraformRod = ModItems.terraformRod.getRegistryName();
 		recipeManasteelPick = ModItems.manasteelPick.getRegistryName();
 		recipeManasteelShovel = ModItems.manasteelShovel.getRegistryName();
 		recipeManasteelAxe = ModItems.manasteelAxe.getRegistryName();
@@ -537,7 +530,6 @@ public final class ModCraftingRecipes {
 		recipeSnowHorn = path("grasshorn_2");
 		recipeTerraSword = ModItems.terraSword.getRegistryName();
 		recipeTerraPick = ModItems.terraPick.getRegistryName();
-		recipeWaterRod = ModItems.waterRod.getRegistryName();
 		recipeElementiumPick = ModItems.elementiumPick.getRegistryName();
 		recipeElementiumShovel = ModItems.elementiumShovel.getRegistryName();
 		recipeElementiumAxe = ModItems.elementiumAxe.getRegistryName();
@@ -560,14 +552,12 @@ public final class ModCraftingRecipes {
 		recipesLaputaShardUpgrade = allOfGroup("laputashard_upgrade");
 		recipeVirusZombie = path("virus_0");
 		recipeVirusSkeleton = path("virus_1");
-		recipeSkyDirtRod = ModItems.skyDirtRod.getRegistryName();
 		recipeGlassPick = ModItems.glassPick.getRegistryName();
 		recipeDiviningRod = ModItems.diviningRod.getRegistryName();
 		recipeGravityRod = ModItems.gravityRod.getRegistryName();
 		recipeMissileRod = ModItems.missileRod.getRegistryName();
 		recipeCraftingHalo = ModItems.craftingHalo.getRegistryName();
 		recipeClip = ModItems.clip.getRegistryName();
-		recipeCobbleRod = ModItems.cobbleRod.getRegistryName();
 		recipeSmeltRod = ModItems.smeltRod.getRegistryName();
 		recipeWorldSeed = ModItems.worldSeed.getRegistryName();
 		recipeSpellCloth = ModItems.spellCloth.getRegistryName();

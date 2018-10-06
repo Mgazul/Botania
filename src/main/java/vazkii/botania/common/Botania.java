@@ -25,15 +25,8 @@ import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
-import net.minecraftforge.fml.common.ModAPIManager;
 import net.minecraftforge.fml.common.SidedProxy;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLInterModComms;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLServerAboutToStartEvent;
-import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
-import net.minecraftforge.fml.common.event.FMLServerStoppingEvent;
+import net.minecraftforge.fml.common.event.*;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -51,32 +44,11 @@ import vazkii.botania.common.brew.ModBrews;
 import vazkii.botania.common.core.command.CommandOpen;
 import vazkii.botania.common.core.command.CommandShare;
 import vazkii.botania.common.core.command.CommandSkyblockSpread;
-import vazkii.botania.common.core.handler.BiomeDecorationHandler;
-import vazkii.botania.common.core.handler.ConfigHandler;
-import vazkii.botania.common.core.handler.IMCHandler;
-import vazkii.botania.common.core.handler.InternalMethodHandler;
-import vazkii.botania.common.core.handler.ManaNetworkHandler;
+import vazkii.botania.common.core.handler.*;
 import vazkii.botania.common.core.loot.LootHandler;
 import vazkii.botania.common.core.proxy.IProxy;
-import vazkii.botania.common.crafting.ModBrewRecipes;
-import vazkii.botania.common.crafting.ModCraftingRecipes;
-import vazkii.botania.common.crafting.ModElvenTradeRecipes;
-import vazkii.botania.common.crafting.ModManaAlchemyRecipes;
-import vazkii.botania.common.crafting.ModManaConjurationRecipes;
-import vazkii.botania.common.crafting.ModManaInfusionRecipes;
-import vazkii.botania.common.crafting.ModPetalRecipes;
-import vazkii.botania.common.crafting.ModPureDaisyRecipes;
-import vazkii.botania.common.crafting.ModRuneRecipes;
-import vazkii.botania.common.entity.EntityCorporeaSpark;
-import vazkii.botania.common.entity.EntityDoppleganger;
-import vazkii.botania.common.entity.EntityFlameRing;
-import vazkii.botania.common.entity.EntityMagicLandmine;
-import vazkii.botania.common.entity.EntityMagicMissile;
-import vazkii.botania.common.entity.EntityManaBurst;
-import vazkii.botania.common.entity.EntityPinkWither;
-import vazkii.botania.common.entity.EntitySignalFlare;
-import vazkii.botania.common.entity.EntitySpark;
-import vazkii.botania.common.entity.ModEntities;
+import vazkii.botania.common.crafting.*;
+import vazkii.botania.common.entity.*;
 import vazkii.botania.common.integration.buildcraft.StatementAPIPlugin;
 import vazkii.botania.common.integration.thaumcraft.TCAspects;
 import vazkii.botania.common.lexicon.LexiconData;
@@ -107,6 +79,7 @@ public class Botania {
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+
 		gardenOfGlassLoaded = Loader.isModLoaded("gardenofglass");
 
 		thaumcraftLoaded = Loader.isModLoaded("thaumcraft");

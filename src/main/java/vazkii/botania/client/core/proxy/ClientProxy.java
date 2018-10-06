@@ -64,7 +64,6 @@ import vazkii.botania.client.gui.lexicon.GuiLexicon;
 import vazkii.botania.client.gui.lexicon.GuiLexiconEntry;
 import vazkii.botania.client.gui.lexicon.GuiLexiconIndex;
 import vazkii.botania.client.render.entity.LayerGaiaHead;
-import vazkii.botania.client.render.entity.RenderBabylonWeapon;
 import vazkii.botania.client.render.entity.RenderCorporeaSpark;
 import vazkii.botania.client.render.entity.RenderDoppleganger;
 import vazkii.botania.client.render.entity.RenderManaStorm;
@@ -90,7 +89,6 @@ import vazkii.botania.common.core.helper.MathHelper;
 import vazkii.botania.common.core.helper.Vector3;
 import vazkii.botania.common.core.proxy.IProxy;
 import vazkii.botania.common.core.version.AdaptorNotifier;
-import vazkii.botania.common.entity.EntityBabylonWeapon;
 import vazkii.botania.common.entity.EntityCorporeaSpark;
 import vazkii.botania.common.entity.EntityDoppleganger;
 import vazkii.botania.common.entity.EntityEnderAirBottle;
@@ -224,7 +222,6 @@ public class ClientProxy implements IProxy {
 		RenderingRegistry.registerEntityRenderingHandler(EntityPoolMinecart.class, RenderPoolMinecart::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityPinkWither.class, RenderPinkWither::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityManaStorm.class, RenderManaStorm::new);
-		RenderingRegistry.registerEntityRenderingHandler(EntityBabylonWeapon.class, RenderBabylonWeapon::new);
 
 		RenderingRegistry.registerEntityRenderingHandler(EntityThornChakram.class, renderManager -> new RenderSnowballStack<>(renderManager, ModItems.thornChakram, Minecraft.getMinecraft().getRenderItem(), entity -> new ItemStack(ModItems.thornChakram, 1, entity.isFire() ? 1 : 0)));
 		RenderingRegistry.registerEntityRenderingHandler(EntityVineBall.class, renderManager -> new RenderSnowball<>(renderManager, ModItems.vineBall, Minecraft.getMinecraft().getRenderItem()));

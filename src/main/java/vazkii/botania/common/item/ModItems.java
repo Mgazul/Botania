@@ -75,23 +75,17 @@ import vazkii.botania.common.item.record.ItemRecordGaia2;
 import vazkii.botania.common.item.relic.ItemDice;
 import vazkii.botania.common.item.relic.ItemFlugelEye;
 import vazkii.botania.common.item.relic.ItemInfiniteFruit;
-import vazkii.botania.common.item.relic.ItemKingKey;
 import vazkii.botania.common.item.relic.ItemLokiRing;
 import vazkii.botania.common.item.relic.ItemOdinRing;
 import vazkii.botania.common.item.relic.ItemThorRing;
-import vazkii.botania.common.item.rod.ItemCobbleRod;
-import vazkii.botania.common.item.rod.ItemDirtRod;
 import vazkii.botania.common.item.rod.ItemDiviningRod;
 import vazkii.botania.common.item.rod.ItemExchangeRod;
 import vazkii.botania.common.item.rod.ItemFireRod;
 import vazkii.botania.common.item.rod.ItemGravityRod;
 import vazkii.botania.common.item.rod.ItemMissileRod;
 import vazkii.botania.common.item.rod.ItemRainbowRod;
-import vazkii.botania.common.item.rod.ItemSkyDirtRod;
 import vazkii.botania.common.item.rod.ItemSmeltRod;
-import vazkii.botania.common.item.rod.ItemTerraformRod;
 import vazkii.botania.common.item.rod.ItemTornadoRod;
-import vazkii.botania.common.item.rod.ItemWaterRod;
 import vazkii.botania.common.lib.LibMisc;
 import vazkii.botania.common.lib.LibOreDict;
 
@@ -110,8 +104,6 @@ public final class ModItems {
 	public static final Item manaCookie = new ItemManaCookie();
 	public static final Item fertilizer = new ItemFertilizer();
 	public static final Item grassSeeds = new ItemGrassSeeds();
-	public static final Item dirtRod = new ItemDirtRod();
-	public static final Item terraformRod = new ItemTerraformRod();
 	public static final Item grassHorn = new ItemGrassHorn();
 	public static final Item manaMirror = new ItemManaMirror();
 	public static final Item manasteelHelm = new ItemManasteelHelm();
@@ -147,7 +139,6 @@ public final class ModItems {
 	public static final Item flightTiara = new ItemFlightTiara();
 	public static final Item enderDagger = new ItemEnderDagger();
 	public static final Item quartz = new ItemQuartz();
-	public static final Item waterRod = new ItemWaterRod();
 	public static final Item elementiumHelm = new ItemElementiumHelm();
 	public static final Item elementiumHelmRevealing = new ItemElementiumHelmRevealing();
 	public static final Item elementiumChest = new ItemElementiumChest();
@@ -168,10 +159,8 @@ public final class ModItems {
 	public static final Item vineBall = new ItemVineBall();
 	public static final Item slingshot = new ItemSlingshot();
 	public static final Item manaBottle = new ItemBottledMana();
-	public static final Item laputaShard = new ItemLaputaShard();
 	public static final Item virus = new ItemVirus();
 	public static final Item reachRing = new ItemReachRing();
-	public static final Item skyDirtRod = new ItemSkyDirtRod();
 	public static final Item itemFinder = new ItemItemFinder();
 	public static final Item superLavaPendant = new ItemSuperLavaPendant();
 	public static final Item enderHand = new ItemEnderHand();
@@ -193,7 +182,6 @@ public final class ModItems {
 	public static final Item blackLotus = new ItemBlackLotus();
 	public static final Item monocle = new ItemMonocle();
 	public static final Item clip = new ItemClip();
-	public static final Item cobbleRod = new ItemCobbleRod();
 	public static final Item smeltRod = new ItemSmeltRod();
 	public static final Item worldSeed = new ItemWorldSeed();
 	public static final Item spellCloth = new ItemSpellCloth();
@@ -211,7 +199,6 @@ public final class ModItems {
 	public static final Item poolMinecart = new ItemPoolMinecart();
 	public static final Item pinkinator = new ItemPinkinator();
 	public static final Item infiniteFruit = new ItemInfiniteFruit();
-	public static final Item kingKey = new ItemKingKey();
 	public static final Item flugelEye = new ItemFlugelEye();
 	public static final Item thorRing = new ItemThorRing();
 	public static final Item odinRing = new ItemOdinRing();
@@ -266,8 +253,6 @@ public final class ModItems {
 		r.register(manaCookie);
 		r.register(fertilizer);
 		r.register(grassSeeds);
-		r.register(dirtRod);
-		r.register(terraformRod);
 		r.register(grassHorn);
 		r.register(manaMirror);
 		r.register(manasteelHelm);
@@ -303,7 +288,6 @@ public final class ModItems {
 		r.register(flightTiara);
 		r.register(enderDagger);
 		r.register(quartz);
-		r.register(waterRod);
 		r.register(elementiumHelm);
 		r.register(elementiumHelmRevealing);
 		r.register(elementiumChest);
@@ -324,10 +308,8 @@ public final class ModItems {
 		r.register(vineBall);
 		r.register(slingshot);
 		r.register(manaBottle);
-		r.register(laputaShard);
 		r.register(virus);
 		r.register(reachRing);
-		r.register(skyDirtRod);
 		r.register(itemFinder);
 		r.register(superLavaPendant);
 		r.register(enderHand);
@@ -349,7 +331,6 @@ public final class ModItems {
 		r.register(blackLotus);
 		r.register(monocle);
 		r.register(clip);
-		r.register(cobbleRod);
 		r.register(smeltRod);
 		r.register(worldSeed);
 		r.register(spellCloth);
@@ -367,7 +348,6 @@ public final class ModItems {
 		r.register(poolMinecart);
 		r.register(pinkinator);
 		r.register(infiniteFruit);
-		r.register(kingKey);
 		r.register(flugelEye);
 		r.register(thorRing);
 		r.register(odinRing);

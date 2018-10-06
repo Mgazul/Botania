@@ -23,7 +23,6 @@ import vazkii.botania.client.model.PlatformModel;
 import vazkii.botania.common.integration.buildcraft.TriggerManaLevel;
 import vazkii.botania.common.item.ItemSparkUpgrade;
 import vazkii.botania.common.item.equipment.bauble.ItemFlightTiara;
-import vazkii.botania.common.item.relic.ItemKingKey;
 
 import java.util.EnumMap;
 import java.util.Map;
@@ -53,7 +52,6 @@ public class MiscellaneousIcons {
 	terrasteelHelmWillIcon;
 
 	public TextureAtlasSprite[] sparkUpgradeIcons;
-	public TextureAtlasSprite[] kingKeyWeaponIcons;
 	public final Map<TriggerManaLevel.State, TextureAtlasSprite> manaLevelTriggerIcons = new EnumMap<>(TriggerManaLevel.State.class);
 	public TextureAtlasSprite[] tiaraWingIcons;
 	public TextureAtlasSprite[] thirdEyeLayers;
@@ -132,9 +130,6 @@ public class MiscellaneousIcons {
 		goldfishIcon = IconHelper.forName(evt.getMap(), "special_goldfish", "items");
 		nerfBatIcon = IconHelper.forName(evt.getMap(), "special_nerfbat", "items");
 
-		kingKeyWeaponIcons = new TextureAtlasSprite[ItemKingKey.WEAPON_TYPES];
-		for(int i = 0; i < ItemKingKey.WEAPON_TYPES; i++)
-			kingKeyWeaponIcons[i] = IconHelper.forName(evt.getMap(), "gate_weapon_" + i, "items");
 		
 		thirdEyeLayers = new TextureAtlasSprite[3];
 		for(int i = 0; i < 3; i++)

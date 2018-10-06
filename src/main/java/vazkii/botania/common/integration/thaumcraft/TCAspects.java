@@ -197,13 +197,11 @@ public class TCAspects {
 		registerComplex(ModItems.lens, 23, new AspectList().add(MAN, 10));                 //Tripwire
 
 		//Rods
-		registerComplex(ModItems.terraformRod, ANY, new AspectList().add(EXCHANGE, 15));
 		registerComplex(ModItems.rainbowRod,   ANY, new AspectList().add(SENSES, 10).add(LIGHT, 10));
 		registerComplex(ModItems.tornadoRod,   ANY, new AspectList().add(FLIGHT, 20));
 		registerComplex(ModItems.diviningRod,  ANY, new AspectList().add(SENSES, 20));
 		registerComplex(ModItems.gravityRod,   ANY, new AspectList().add(MOTION, 20));
 		registerComplex(ModItems.missileRod,   ANY, new AspectList().add(AVERSION, 30));
-		registerComplex(ModItems.cobbleRod,    ANY, new AspectList().add(EARTH, 20));
 		registerComplex(ModItems.exchangeRod,  ANY, new AspectList().add(EXCHANGE, 30));
 
 		register(LibOreDict.RED_STRING, new AspectList()
@@ -264,7 +262,6 @@ public class TCAspects {
 		AspectList relicAspects = new AspectList().add(MAGIC, 30).add(DESIRE, 25).add(ELDRITCH, 15);
 		register(ModItems.dice,          ANY, relicAspects.copy().add(ELDRITCH, 15));
 		register(ModItems.infiniteFruit, ANY, relicAspects.copy().add(LIFE,     50).add(PLANT,   30));
-		register(ModItems.kingKey,       ANY, relicAspects.copy().add(AVERSION, 50).add(TRAP,    30));
 		register(ModItems.flugelEye,     ANY, relicAspects.copy().add(MOTION,   50).add(FLIGHT,  30));
 		register(ModItems.thorRing,      ANY, relicAspects.copy().add(TOOL,     50).add(ENTROPY, 30));
 		register(ModItems.odinRing,      ANY, relicAspects.copy().add(PROTECT,  50).add(LIFE,    30));

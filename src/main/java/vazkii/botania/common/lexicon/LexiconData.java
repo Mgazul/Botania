@@ -166,14 +166,11 @@ public final class LexiconData {
 
 	public static LexiconEntry manaBlaster;
 	public static LexiconEntry grassSeeds;
-	public static LexiconEntry dirtRod;
-	public static LexiconEntry terraformRod;
 	public static LexiconEntry manasteelGear;
 	public static LexiconEntry terrasteelArmor;
 	public static LexiconEntry grassHorn;
 	public static LexiconEntry terraBlade;
 	public static LexiconEntry terraPick;
-	public static LexiconEntry waterRod;
 	public static LexiconEntry elfGear;
 	public static LexiconEntry openBucket;
 	public static LexiconEntry rainbowRod;
@@ -182,14 +179,12 @@ public final class LexiconData {
 	public static LexiconEntry vineBall;
 	public static LexiconEntry laputaShard;
 	public static LexiconEntry virus;
-	public static LexiconEntry skyDirtRod;
 	public static LexiconEntry glassPick;
 	public static LexiconEntry diviningRod;
 	public static LexiconEntry gravityRod;
 	public static LexiconEntry missileRod;
 	public static LexiconEntry craftingHalo;
 	public static LexiconEntry clip;
-	public static LexiconEntry cobbleRod;
 	public static LexiconEntry smeltRod;
 	public static LexiconEntry worldSeed;
 	public static LexiconEntry spellCloth;
@@ -270,7 +265,6 @@ public final class LexiconData {
 	public static LexiconEntry relics;
 	public static LexiconEntry relicInfo;
 	public static LexiconEntry infiniteFruit;
-	public static LexiconEntry kingKey;
 	public static LexiconEntry flugelEye;
 	public static LexiconEntry thorRing;
 	public static LexiconEntry lokiRing;
@@ -860,12 +854,6 @@ public final class LexiconData {
 				new PageManaInfusionRecipe("3", ModManaInfusionRecipes.mycelSeedsRecipes), new PageText("4"),
 				new PageCraftingRecipe("5", ModCraftingRecipes.recipesAltGrassSeeds));
 
-		dirtRod = new BasicLexiconEntry(LibLexicon.TOOL_DIRT_ROD, categoryTools);
-		dirtRod.setLexiconPages(new PageText("0"), new PageText("2"), new PageCraftingRecipe("1", ModCraftingRecipes.recipeDirtRod));
-
-		terraformRod = new BasicLexiconEntry(LibLexicon.TOOL_TERRAFORM_ROD, categoryTools);
-		terraformRod.setLexiconPages(new PageText("0"), new PageText("1"), new PageText("2"),
-				new PageCraftingRecipe("3", ModCraftingRecipes.recipeTerraformRod));
 
 		manasteelGear = new BasicLexiconEntry(LibLexicon.TOOL_MANASTEEL_GEAR, categoryTools);
 		manasteelGear.setPriority().setLexiconPages(new PageText("0"), new PageText("10"),
@@ -897,9 +885,6 @@ public final class LexiconData {
 		terraPick = new BasicLexiconEntry(LibLexicon.TOOL_TERRA_PICK, categoryTools);
 		terraPick.setLexiconPages(new PageText("0"), new PageText("1"), new PageText("2"), new PageText("3"),
 				new PageText("4"), new PageCraftingRecipe("5", ModCraftingRecipes.recipeTerraPick));
-
-		waterRod = new BasicLexiconEntry(LibLexicon.TOOL_WATER_ROD, categoryTools);
-		waterRod.setLexiconPages(new PageText("0"), new PageCraftingRecipe("1", ModCraftingRecipes.recipeWaterRod));
 
 		elfGear = new AlfheimLexiconEntry(LibLexicon.TOOL_ELF_GEAR, categoryTools);
 		elfGear.setLexiconPages(new PageText("0"), new PageText("1"), new PageText("2"),
@@ -946,9 +931,6 @@ public final class LexiconData {
 		virus.setLexiconPages(new PageText("0"), new PageCraftingRecipe("1", ModCraftingRecipes.recipeVirusZombie),
 				new PageCraftingRecipe("2", ModCraftingRecipes.recipeVirusSkeleton));
 
-		skyDirtRod = new AlfheimLexiconEntry(LibLexicon.TOOL_SKY_DIRT_ROD, categoryTools);
-		skyDirtRod.setLexiconPages(new PageText("0"), new PageCraftingRecipe("1", ModCraftingRecipes.recipeSkyDirtRod));
-
 		glassPick = new BasicLexiconEntry(LibLexicon.TOOL_GLASS_PICK, categoryTools);
 		glassPick.setLexiconPages(new PageText("0"), new PageCraftingRecipe("1", ModCraftingRecipes.recipeGlassPick));
 
@@ -971,9 +953,6 @@ public final class LexiconData {
 		clip = new AlfheimLexiconEntry(LibLexicon.TOOL_CLIP, categoryTools);
 		clip.setLexiconPages(new PageText("0"), new PageText("1"),
 				new PageCraftingRecipe("2", ModCraftingRecipes.recipeClip));
-
-		cobbleRod = new BasicLexiconEntry(LibLexicon.TOOL_COBBLE_ROD, categoryTools);
-		cobbleRod.setLexiconPages(new PageText("0"), new PageCraftingRecipe("1", ModCraftingRecipes.recipeCobbleRod));
 
 		smeltRod = new BasicLexiconEntry(LibLexicon.TOOL_SMELT_ROD, categoryTools);
 		smeltRod.setLexiconPages(new PageText("0"), new PageCraftingRecipe("1", ModCraftingRecipes.recipeSmeltRod));
@@ -1311,9 +1290,6 @@ public final class LexiconData {
 			infiniteFruit = new RelicLexiconEntry(LibLexicon.ALF_INFINITE_FRUIT, categoryAlfhomancy,
 					new ResourceLocation(LibMisc.MOD_ID, "challenge/infinite_fruit"));
 			infiniteFruit.setLexiconPages(new PageText("0")).setIcon(new ItemStack(ModItems.infiniteFruit));
-
-			kingKey = new RelicLexiconEntry(LibLexicon.ALF_KING_KEY, categoryAlfhomancy, new ResourceLocation(LibMisc.MOD_ID, "challenge/king_key"));
-			kingKey.setLexiconPages(new PageText("0")).setIcon(new ItemStack(ModItems.kingKey));
 
 			flugelEye = new RelicLexiconEntry(LibLexicon.ALF_FLUGEL_EYE, categoryAlfhomancy,
 					new ResourceLocation(LibMisc.MOD_ID, "challenge/flugel_eye"));

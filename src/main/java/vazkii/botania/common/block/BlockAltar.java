@@ -52,7 +52,6 @@ import vazkii.botania.common.block.tile.TileAltar;
 import vazkii.botania.common.block.tile.TileSimpleInventory;
 import vazkii.botania.common.core.helper.InventoryHelper;
 import vazkii.botania.common.item.ModItems;
-import vazkii.botania.common.item.rod.ItemWaterRod;
 import vazkii.botania.common.lexicon.LexiconData;
 import vazkii.botania.common.lib.LibBlockNames;
 
@@ -153,11 +152,9 @@ public class BlockAltar extends BlockMod implements ILexiconable {
 			return true;
 		}
 		else {
-			if(!stack.isEmpty() && (isValidWaterContainer(stack) || stack.getItem() == ModItems.waterRod && ManaItemHandler.requestManaExact(stack, player, ItemWaterRod.COST, false))) {
+			if(!stack.isEmpty() && (isValidWaterContainer(stack))) {
 				if(!tile.hasWater) {
-					if(stack.getItem() == ModItems.waterRod)
-						ManaItemHandler.requestManaExact(stack, player, ItemWaterRod.COST, true);
-					else if(!player.capabilities.isCreativeMode)
+					 if(!player.capabilities.isCreativeMode)
 						player.setHeldItem(hand, drain(FluidRegistry.WATER, stack));
 
 					tile.setWater(true);

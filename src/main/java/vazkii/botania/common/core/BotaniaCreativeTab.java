@@ -74,13 +74,7 @@ public final class BotaniaCreativeTab extends CreativeTabs {
 		addItem(ModItems.rune);
 
 		addBlock(ModBlocks.avatar);
-		addItem(ModItems.dirtRod);
-		addItem(ModItems.skyDirtRod);
-		addItem(ModItems.cobbleRod);
-		addItem(ModItems.terraformRod);
-		addItem(ModItems.laputaShard);
 		addItem(ModItems.grassHorn);
-		addItem(ModItems.waterRod);
 		addItem(ModItems.openBucket);
 		addItem(ModItems.rainbowRod);
 		addBlock(ModBlocks.bifrostPerm);
@@ -217,7 +211,6 @@ public final class BotaniaCreativeTab extends CreativeTabs {
 		if(ConfigHandler.relicsEnabled) {
 			addItem(ModItems.dice);
 			addItem(ModItems.infiniteFruit);
-			addItem(ModItems.kingKey);
 			addItem(ModItems.flugelEye);
 			addItem(ModItems.thorRing);
 			addItem(ModItems.odinRing);

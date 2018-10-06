@@ -465,7 +465,6 @@ entity.botania:poolMinecart.name=魔力池矿车
 entity.botania:pinkWither.name=粉色凋零
 entity.botania:playerMover.name=微光束
 entity.botania:manaStorm.name=魔力风暴中心
-entity.botania:babylonWeapon.name=贮藏库武器
 entity.botania:fallingStar.name=落星
 
 # ADVANCEMENT NAMES + DESC
@@ -542,8 +541,6 @@ advancement.botania:dandelifeonPickup.desc=制作一朵启命英来挑战你的�
 
 advancement.botania:signalFlareStun=See the Lights
 advancement.botania:signalFlareStun.desc=用一发信号弹让至少100只怪物眩晕
-advancement.botania:l20ShardUse=Out of Step
-advancement.botania:l20ShardUse.desc=用能量为XX的拉普达碎片将地面升至天空
 advancement.botania:gaiaGuardianNoArmor=Mythologia's End
 advancement.botania:gaiaGuardianNoArmor.desc=战斗从头至尾不穿任何护甲击杀一只盖亚守护者
 advancement.botania:rankSSPick=六兆年零一夜物语
@@ -1379,7 +1376,6 @@ item.botania:grassSeeds6.name=焦土草种
 item.botania:grassSeeds7.name=注魔草种
 item.botania:grassSeeds8.name=异变草种
 item.botania:livingwoodTwig.name=活木枝
-item.botania:dirtRod.name=大地法杖
 item.botania:terraformRod.name=大地权杖
 item.botania:manaMirror.name=魔力手镜
 item.botania:manasteelHelm.name=魔钢头盔
@@ -1429,7 +1425,6 @@ item.botania:quartz6.name=金黄石英
 item.botania:elementium.name=源质钢锭
 item.botania:pixieDust.name=精灵尘
 item.botania:dragonstone.name=龙石
-item.botania:waterRod.name=海洋法杖
 item.botania:elementiumHelm.name=源质钢头盔
 item.botania:elementiumChest.name=源质钢胸甲
 item.botania:elementiumLegs.name=源质钢护腿
@@ -1449,10 +1444,8 @@ item.botania:fireRod.name=地狱法杖
 item.botania:vineBall.name=藤蔓球
 item.botania:slingshot.name=活木弹弓
 item.botania:manaBottle.name=瓶装魔力
-item.botania:laputaShard.name=拉普达碎片
 item.botania:virus0.name=僵尸病毒
 item.botania:virus1.name=骷髅病毒
-item.botania:skyDirtRod.name=高原法杖
 item.botania:placeholder.name=合成占位符
 item.botania:manasteelHelmReveal.name=魔钢揭示头盔
 item.botania:terrasteelHelmReveal.name=泰拉钢揭示头盔
@@ -2898,12 +2891,6 @@ botania.page.terraPick3=当工具激活时,它能破坏区域 内的方块.阶�
 botania.page.terraPick4=最后,工具每次破坏方块时都 会受到磨损,所以最好物品栏 有与阶位相应的&4魔力&0储存,工 具的功能又像&1魔钢工具&0,因为 它使用&4魔力&0抵消磨损,制作原 料是&1泰拉钢&0.<br>它也不会像普通掉落物品那 样消失.
 # No translation # botania.page.terraPick5=WE'RE MINING IN THE DATABASE WOW WOW
 
-# -- ROD OF THE SEAS
-botania.entry.waterRod=海洋法杖
-botania.tagline.waterRod=制造水的法杖
-botania.page.waterRod0=类似大地法杖,&1海洋法杖&0会消 耗一些&4魔力&0,在所用之处放置 &1水&0方块.此外,它也能用于填 充&1花药台&0.
-botania.page.waterRod1=保持地球的洁净,它不是天王 星
-
 # -- ELEMENTIUM EQUIPMENT
 botania.entry.elfGear=源质钢装备
 botania.tagline.elfGear=有着特殊效果的魔钢级装备
@@ -2963,14 +2950,6 @@ botania.page.vineBall0=&1梯子&0不能独立存在,它们需要 有依附的东
 botania.page.vineBall1=也可以用一些类似&1活木&0和&1风&0 &1之符文&0的材料制作一把能忽 视重力发射&1藤蔓球&0的弹弓.
 botania.page.vineBall2=这将会在Vineacraft出现..
 botania.page.vineBall3=...如果那确实存在的话.
-
-# -- SHARD OF LAPUTA
-botania.entry.laputaShard=拉普达碎片
-botania.tagline.laputaShard=将大地抬升为浮空岛
-botania.page.laputaShard0=通过有些复杂的激活程序,结 合一些有趣的材料包括&1盖亚&0 &1之魂&0就能制作一个特殊的碎 片,当对土地使用时,就能让 附近一个几乎的球形区域升至 空中.<br>这个过程可持续10分钟 并且根据土地的质量消耗对 应量的碎片.
-botania.page.laputaShard2=创建的岛的初始半径为14格 ,换句话说就是直径28格.可 通过添加&1盖亚之魂&0来升级,每 个增加1格半径,即2格直径.
-botania.page.laputaShard1=看呐白,拉普达真的存在!
-botania.page.laputaShard3=大小很重要
 
 # -- EQUESTRIAN VIRUS
 botania.entry.virus=马类病毒
@@ -3867,7 +3846,6 @@ botania.subtitle.endoflame=火红莲燃烧物品
 botania.subtitle.equipBauble=装备首饰
 botania.subtitle.gaiaTrap=盖亚守卫者的符咒
 botania.subtitle.holyCloak=神圣斗篷激活
-botania.subtitle.laputaStart=拉普达碎片 激活
 botania.subtitle.lexiconOpen=植物魔法辞典打开
 botania.subtitle.lexiconPage=植物魔法辞典翻页
 botania.subtitle.lightRelay=微光的嗖嗖声
@@ -3881,7 +3859,6 @@ botania.subtitle.runeAltarStart=符文祭坛启动
 botania.subtitle.spreaderFire=魔力发射器发射魔力
 botania.subtitle.starcaller=星星从天而降
 botania.subtitle.terraBlade=泰拉之刃 激活
-botania.subtitle.terraformRod=大地被塑形
 botania.subtitle.terraPickMode=泰拉粉碎者升级
 botania.subtitle.terrasteelCraft=泰拉钢制作完成
 botania.subtitle.thermalily=炽玫瑰消耗熔岩
