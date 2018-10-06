@@ -66,11 +66,4 @@ public class ModBrews {
 		allure = new BrewMod(LibBrewNames.ALLURE, 2000, new PotionEffect(ModPotions.allure, 4800, 0));
 		clear = new BrewMod(LibBrewNames.CLEAR, 4000, new PotionEffect(ModPotions.clear, 0, 0));
 	}
-
-	public static void initTC() {
-		Potion warpWardPotion = Potion.REGISTRY.getObject(new ResourceLocation("thaumcraft:warpward"));
-
-		if(warpWardPotion != null)
-			warpWard = new BrewMod(LibBrewNames.WARP_WARD, 0xFBBDFF, 25000, new PotionEffect(warpWardPotion, 12000, 0)).setNotBloodPendantInfusable();
-	}
 }

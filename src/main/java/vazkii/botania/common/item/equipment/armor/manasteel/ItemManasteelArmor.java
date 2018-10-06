@@ -219,7 +219,7 @@ public class ItemManasteelArmor extends ItemArmor implements ISpecialArmor, IMan
 			return false;
 
 		switch(i) {
-		case 0: return stack.getItem() == ModItems.manasteelHelm || stack.getItem() == ModItems.manasteelHelmRevealing;
+		case 0: return stack.getItem() == ModItems.manasteelHelm;
 		case 1: return stack.getItem() == ModItems.manasteelChest;
 		case 2: return stack.getItem() == ModItems.manasteelLegs;
 		case 3: return stack.getItem() == ModItems.manasteelBoots;

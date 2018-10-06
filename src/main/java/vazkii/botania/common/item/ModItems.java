@@ -59,10 +59,6 @@ import vazkii.botania.common.item.equipment.tool.manasteel.ItemManasteelSword;
 import vazkii.botania.common.item.equipment.tool.terrasteel.ItemTerraAxe;
 import vazkii.botania.common.item.equipment.tool.terrasteel.ItemTerraPick;
 import vazkii.botania.common.item.equipment.tool.terrasteel.ItemTerraSword;
-import vazkii.botania.common.item.interaction.thaumcraft.ItemElementiumHelmRevealing;
-import vazkii.botania.common.item.interaction.thaumcraft.ItemManaInkwell;
-import vazkii.botania.common.item.interaction.thaumcraft.ItemManasteelHelmRevealing;
-import vazkii.botania.common.item.interaction.thaumcraft.ItemTerrasteelHelmRevealing;
 import vazkii.botania.common.item.lens.ItemLens;
 import vazkii.botania.common.item.material.ItemDye;
 import vazkii.botania.common.item.material.ItemManaResource;
@@ -107,7 +103,6 @@ public final class ModItems {
 	public static final Item grassHorn = new ItemGrassHorn();
 	public static final Item manaMirror = new ItemManaMirror();
 	public static final Item manasteelHelm = new ItemManasteelHelm();
-	public static final Item manasteelHelmRevealing = new ItemManasteelHelmRevealing();
 	public static final Item manasteelChest = new ItemManasteelChest();
 	public static final Item manasteelLegs = new ItemManasteelLegs();
 	public static final Item manasteelBoots = new ItemManasteelBoots();
@@ -117,7 +112,6 @@ public final class ModItems {
 	public static final Item manasteelSword = new ItemManasteelSword();
 	public static final Item manasteelShears = new ItemManasteelShears();
 	public static final Item terrasteelHelm = new ItemTerrasteelHelm();
-	public static final Item terrasteelHelmRevealing = new ItemTerrasteelHelmRevealing();
 	public static final Item terrasteelChest = new ItemTerrasteelChest();
 	public static final Item terrasteelLegs = new ItemTerrasteelLegs();
 	public static final Item terrasteelBoots = new ItemTerrasteelBoots();
@@ -140,7 +134,6 @@ public final class ModItems {
 	public static final Item enderDagger = new ItemEnderDagger();
 	public static final Item quartz = new ItemQuartz();
 	public static final Item elementiumHelm = new ItemElementiumHelm();
-	public static final Item elementiumHelmRevealing = new ItemElementiumHelmRevealing();
 	public static final Item elementiumChest = new ItemElementiumChest();
 	public static final Item elementiumLegs = new ItemElementiumLegs();
 	public static final Item elementiumBoots = new ItemElementiumBoots();
@@ -169,7 +162,6 @@ public final class ModItems {
 	public static final Item sparkUpgrade = new ItemSparkUpgrade();
 	public static final Item diviningRod = new ItemDiviningRod();
 	public static final Item gravityRod = new ItemGravityRod();
-	public static final Item manaInkwell = new ItemManaInkwell();
 	public static final Item vial = new ItemVial();
 	public static final Item brewVial = new ItemBrewVial();
 	public static final Item brewFlask = new ItemBrewFlask();
@@ -256,7 +248,6 @@ public final class ModItems {
 		r.register(grassHorn);
 		r.register(manaMirror);
 		r.register(manasteelHelm);
-		r.register(manasteelHelmRevealing);
 		r.register(manasteelChest);
 		r.register(manasteelLegs);
 		r.register(manasteelBoots);
@@ -266,7 +257,6 @@ public final class ModItems {
 		r.register(manasteelSword);
 		r.register(manasteelShears);
 		r.register(terrasteelHelm);
-		r.register(terrasteelHelmRevealing);
 		r.register(terrasteelChest);
 		r.register(terrasteelLegs);
 		r.register(terrasteelBoots);
@@ -289,7 +279,6 @@ public final class ModItems {
 		r.register(enderDagger);
 		r.register(quartz);
 		r.register(elementiumHelm);
-		r.register(elementiumHelmRevealing);
 		r.register(elementiumChest);
 		r.register(elementiumLegs);
 		r.register(elementiumBoots);
@@ -318,7 +307,6 @@ public final class ModItems {
 		r.register(sparkUpgrade);
 		r.register(diviningRod);
 		r.register(gravityRod);
-		r.register(manaInkwell);
 		r.register(vial);
 		r.register(brewVial);
 		r.register(brewFlask);

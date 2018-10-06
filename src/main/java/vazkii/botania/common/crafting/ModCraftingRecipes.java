@@ -328,14 +328,6 @@ public final class ModCraftingRecipes {
 		r.register(new CompositeLensRecipe().setRegistryName(new ResourceLocation(LibMisc.MOD_ID, "composite_lens")));
 		r.register(new CosmeticAttachRecipe().setRegistryName(new ResourceLocation(LibMisc.MOD_ID, "cosmetic_attach")));
 		r.register(new CosmeticRemoveRecipe().setRegistryName(new ResourceLocation(LibMisc.MOD_ID, "cosmetic_remove")));
-		if(Botania.thaumcraftLoaded) {
-			r.register(new HelmRevealingRecipe(ModItems.terrasteelHelmRevealing, ModItems.terrasteelHelm)
-					.setRegistryName(LibMisc.MOD_ID, LibItemNames.TERRASTEEL_HELM_R + "_from_goggles"));
-			r.register(new HelmRevealingRecipe(ModItems.manasteelHelmRevealing, ModItems.manasteelHelm)
-					.setRegistryName(LibMisc.MOD_ID, LibItemNames.MANASTEEL_HELM_R + "_from_goggles"));
-			r.register(new HelmRevealingRecipe(ModItems.elementiumHelmRevealing, ModItems.elementiumHelm)
-					.setRegistryName(LibMisc.MOD_ID, LibItemNames.ELEMENTIUM_HELM_R + "_from_goggles"));
-		}
 		r.register(new KeepIvyRecipe().setRegistryName(new ResourceLocation(LibMisc.MOD_ID, "keep_ivy_attach")));
 		r.register(new LensDyeingRecipe().setRegistryName(new ResourceLocation(LibMisc.MOD_ID, "lens_dye")));
 		r.register(new ManaGunLensRecipe().setRegistryName(new ResourceLocation(LibMisc.MOD_ID, "mana_gun_add_lens")));
@@ -353,13 +345,6 @@ public final class ModCraftingRecipes {
 		}
 
 		// Terrasteel Armor Recipes
-		r.register(new ArmorUpgradeRecipe(new ItemStack(ModItems.terrasteelHelmRevealing),
-				"TRT", "SAS", " S ",
-				'T', LibOreDict.LIVINGWOOD_TWIG,
-				'S', LibOreDict.TERRA_STEEL,
-				'R', LibOreDict.RUNE[4],
-				'A', new ItemStack(ModItems.manasteelHelmRevealing)).setRegistryName(ModItems.terrasteelHelmRevealing.getRegistryName()));
-
 		r.register(new ArmorUpgradeRecipe(new ItemStack(ModItems.terrasteelHelm),
 				"TRT", "SAS", " S ",
 				'T', LibOreDict.LIVINGWOOD_TWIG,

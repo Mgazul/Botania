@@ -97,8 +97,6 @@ public final class BotaniaCreativeTab extends CreativeTabs {
 		addBlock(ModBlocks.enchantedSoil);
 		addItem(ModItems.grassSeeds);
 		addBlock(ModBlocks.altGrass);
-		if(Botania.thaumcraftLoaded)
-			addItem(ModItems.manaInkwell);
 		addBlock(ModBlocks.forestDrum);
 		addBlock(ModBlocks.forestEye);
 		addBlock(ModBlocks.enderEye);
@@ -167,8 +165,6 @@ public final class BotaniaCreativeTab extends CreativeTabs {
 		addItem(ModItems.enderDagger);
 		addItem(ModItems.livingwoodBow);
 		addItem(ModItems.manasteelHelm);
-		if(Botania.thaumcraftLoaded)
-			addItem(ModItems.manasteelHelmRevealing);
 		addItem(ModItems.manasteelChest);
 		addItem(ModItems.manasteelLegs);
 		addItem(ModItems.manasteelBoots);
@@ -185,8 +181,6 @@ public final class BotaniaCreativeTab extends CreativeTabs {
 		addItem(ModItems.thunderSword);
 		addItem(ModItems.crystalBow);
 		addItem(ModItems.elementiumHelm);
-		if(Botania.thaumcraftLoaded)
-			addItem(ModItems.elementiumHelmRevealing);
 		addItem(ModItems.elementiumChest);
 		addItem(ModItems.elementiumLegs);
 		addItem(ModItems.elementiumBoots);
@@ -196,8 +190,6 @@ public final class BotaniaCreativeTab extends CreativeTabs {
 		addItem(ModItems.terraAxe);
 		addItem(ModItems.temperanceStone);
 		addItem(ModItems.terrasteelHelm);
-		if(Botania.thaumcraftLoaded)
-			addItem(ModItems.terrasteelHelmRevealing);
 		addItem(ModItems.terrasteelChest);
 		addItem(ModItems.terrasteelLegs);
 		addItem(ModItems.terrasteelBoots);

@@ -66,7 +66,7 @@ public abstract class ItemElementiumArmor extends ItemManasteelArmor implements 
 			return false;
 
 		switch(i) {
-		case 0: return stack.getItem() == ModItems.elementiumHelm || stack.getItem() == ModItems.elementiumHelmRevealing;
+		case 0: return stack.getItem() == ModItems.elementiumHelm;
 		case 1: return stack.getItem() == ModItems.elementiumChest;
 		case 2: return stack.getItem() == ModItems.elementiumLegs;
 		case 3: return stack.getItem() == ModItems.elementiumBoots;

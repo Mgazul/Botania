@@ -90,7 +90,7 @@ public class ItemTerrasteelArmor extends ItemManasteelArmor {
 			return false;
 
 		switch(i) {
-		case 0: return stack.getItem() == ModItems.terrasteelHelm || stack.getItem() == ModItems.terrasteelHelmRevealing;
+		case 0: return stack.getItem() == ModItems.terrasteelHelm;
 		case 1: return stack.getItem() == ModItems.terrasteelChest;
 		case 2: return stack.getItem() == ModItems.terrasteelLegs;
 		case 3: return stack.getItem() == ModItems.terrasteelBoots;

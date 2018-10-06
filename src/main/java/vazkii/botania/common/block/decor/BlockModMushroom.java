@@ -29,7 +29,6 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.common.Optional;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import thaumcraft.api.crafting.IInfusionStabiliser;
 import vazkii.botania.api.item.IHornHarvestable;
 import vazkii.botania.api.item.IPetalApothecary;
 import vazkii.botania.api.lexicon.ILexiconable;
@@ -49,7 +48,7 @@ import javax.annotation.Nonnull;
 import java.util.Random;
 
 @Optional.Interface(modid = "thaumcraft", iface = "thaumcraft.api.crafting.IInfusionStabiliser", striprefs = true)
-public class BlockModMushroom extends BlockMushroom implements IInfusionStabiliser, IHornHarvestable, ILexiconable, IModelRegister, IFlowerComponent {
+public class BlockModMushroom extends BlockMushroom implements IHornHarvestable, ILexiconable, IModelRegister, IFlowerComponent {
 
 	private static final AxisAlignedBB AABB = new AxisAlignedBB(0.3, 0, 0.3, 0.8, 1, 0.8);
 
@@ -131,11 +130,6 @@ public class BlockModMushroom extends BlockMushroom implements IInfusionStabilis
 
 		if(rand.nextDouble() < ConfigHandler.flowerParticleFrequency * 0.25F)
 			Botania.proxy.sparkleFX(pos.getX() + 0.3 + rand.nextFloat() * 0.5, pos.getY() + 0.5 + rand.nextFloat() * 0.5, pos.getZ() + 0.3 + rand.nextFloat() * 0.5, r / 255F, g / 255F, b / 255F, rand.nextFloat(), 5);
-	}
-
-	@Override
-	public boolean canStabaliseInfusion(World world, BlockPos pos) {
-		return ConfigHandler.enableThaumcraftStablizers;
 	}
 
 	@Override

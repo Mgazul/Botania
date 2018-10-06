@@ -52,15 +52,7 @@ public class HelmRevealingRecipe extends ShapelessRecipes {
 		ItemStack helmCopy = helm.copy();
 		Item helmItem = helmCopy.getItem();
 
-		ItemStack newHelm;
-
-		if(helmItem == ModItems.manasteelHelm)
-			newHelm = new ItemStack(ModItems.manasteelHelmRevealing);
-		else if(helmItem == ModItems.terrasteelHelm)
-			newHelm = new ItemStack(ModItems.terrasteelHelmRevealing);
-		else if(helmItem == ModItems.elementiumHelm)
-			newHelm = new ItemStack(ModItems.elementiumHelmRevealing);
-		else return ItemStack.EMPTY;
+		ItemStack newHelm = ItemStack.EMPTY;
 
 		//Copy Ancient Wills
 		for(int i = 0; i < 6; i++)

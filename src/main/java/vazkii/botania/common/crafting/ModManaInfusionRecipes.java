@@ -74,11 +74,6 @@ public final class ModManaInfusionRecipes {
 		manaQuartzRecipe = BotaniaAPI.registerManaInfusionRecipe(new ItemStack(ModItems.quartz, 1, 1), new ItemStack(Items.QUARTZ), 250);
 		tinyPotatoRecipe = BotaniaAPI.registerManaInfusionRecipe(new ItemStack(ModBlocks.tinyPotato), new ItemStack(Items.POTATO), 1337);
 
-		if(Botania.thaumcraftLoaded) {
-			Item inkwell = Item.REGISTRY.getObject(new ResourceLocation("thaumcraft", "scribing_tools"));
-			manaInkwellRecipe = BotaniaAPI.registerManaInfusionRecipe(new ItemStack(ModItems.manaInkwell, 1, ModItems.manaInkwell.getMaxDamage()), new ItemStack(inkwell), 35000);
-		}
-
 		managlassRecipe = BotaniaAPI.registerManaInfusionRecipe(new ItemStack(ModBlocks.manaGlass), new ItemStack(Blocks.GLASS), 150);
 		manaStringRecipe = BotaniaAPI.registerManaInfusionRecipe(new ItemStack(ModItems.manaResource, 1, 16), new ItemStack(Items.STRING), 5000);
 

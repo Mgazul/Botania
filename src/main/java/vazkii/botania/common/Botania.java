@@ -11,7 +11,6 @@
 package vazkii.botania.common;
 
 import net.minecraft.advancements.CriteriaTriggers;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.MultiPartEntityPart;
 import net.minecraft.entity.boss.EntityDragon;
 import net.minecraft.entity.boss.EntityWither;
@@ -50,7 +49,6 @@ import vazkii.botania.common.core.proxy.IProxy;
 import vazkii.botania.common.crafting.*;
 import vazkii.botania.common.entity.*;
 import vazkii.botania.common.integration.buildcraft.StatementAPIPlugin;
-import vazkii.botania.common.integration.thaumcraft.TCAspects;
 import vazkii.botania.common.lexicon.LexiconData;
 import vazkii.botania.common.lib.LibMisc;
 import vazkii.botania.common.network.GuiHandler;
@@ -63,7 +61,6 @@ public class Botania {
 
 	public static boolean gardenOfGlassLoaded = false;
 
-	public static boolean thaumcraftLoaded = false;
 	public static boolean bcApiLoaded = false;
 	public static boolean bloodMagicLoaded = false;
 	public static boolean coloredLightsLoaded = false;
@@ -82,7 +79,6 @@ public class Botania {
 
 		gardenOfGlassLoaded = Loader.isModLoaded("gardenofglass");
 
-		thaumcraftLoaded = Loader.isModLoaded("thaumcraft");
 		bcApiLoaded = Loader.isModLoaded("buildcraftlib");
 		bloodMagicLoaded = Loader.isModLoaded("bloodmagic"); // Psh, noob
 		coloredLightsLoaded = Loader.isModLoaded("easycoloredlights");
@@ -135,9 +131,6 @@ public class Botania {
 
 		FMLInterModComms.sendMessage("projecte", "interdictionblacklist", EntityManaBurst.class.getCanonicalName());
 
-		if(Botania.thaumcraftLoaded && ConfigHandler.enableThaumcraftAspects)
-			MinecraftForge.EVENT_BUS.register(TCAspects.class);
-
 		if(Botania.bcApiLoaded)
 			new StatementAPIPlugin();
 		proxy.init(event);
@@ -145,15 +138,6 @@ public class Botania {
 
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-		if(Botania.thaumcraftLoaded) {
-			ModBrews.initTC();
-			ModBrewRecipes.initTC();
-			try {
-				@SuppressWarnings("unchecked")
-				Class<? extends Entity> clazz = (Class<? extends Entity>) Class.forName("thaumcraft.common.entities.EntityFluxRift");
-				BotaniaAPI.blacklistEntityFromGravityRod(clazz);
-			} catch (ClassNotFoundException ignored) {}
-		}
 
 		ModBlocks.addDispenserBehaviours();
 		ConfigHandler.loadPostInit();

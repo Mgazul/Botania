@@ -30,8 +30,6 @@ public class ArmorUpgradeRecipe extends ShapedOreRecipe {
 			ItemStack stack = var1.getStackInSlot(i);
 			if (!stack.isEmpty() && stack.getItem() instanceof ItemArmor && stack.hasTagCompound()) {
 				EnchantmentHelper.setEnchantments(EnchantmentHelper.getEnchantments(stack), out);
-				if(Botania.thaumcraftLoaded)
-					HelmRevealingRecipe.copyTCData(stack, out);
 				break;
 			}
 		}

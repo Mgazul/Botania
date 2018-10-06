@@ -403,9 +403,6 @@ public final class LexiconData {
 			gardenOfGlass.setPriority().setIcon(new ItemStack(ModItems.manaResource, 1, 20));
 		}
 
-		if (Botania.thaumcraftLoaded)
-			new CompatLexiconEntry("wrap", categoryBasics, "Thaumcraft").setLexiconPages(new PageText("0")); // lel
-
 		// MANA ENTRIES
 		manaIntro = new BasicLexiconEntry(LibLexicon.MANA_INTRO, categoryMana);
 		manaIntro.setPriority().setLexiconPages(new PageText("0"), new PageText("1"), new PageText("2"));
@@ -1403,23 +1400,6 @@ public final class LexiconData {
 			shedding = new BasicLexiconEntry(LibLexicon.MISC_SHEDDING, BotaniaAPI.categoryMisc);
 			shedding.setLexiconPages(new PageText("0")).setPriority().setIcon(new ItemStack(Items.FEATHER));
 			SheddingHandler.addToLexicon();
-		}
-
-		if (Botania.thaumcraftLoaded) {
-			tcIntegration = new CompatLexiconEntry(LibLexicon.MISC_TC_INTEGRATION, BotaniaAPI.categoryMisc, "Thaumcraft");
-
-			if (ConfigHandler.enableThaumcraftStablizers)
-				tcIntegration.setLexiconPages(new PageText("0"), new PageText("1"),
-						new PageCraftingRecipe("2", ModCraftingRecipes.recipeHelmetOfRevealing), new PageText("3"),
-						new PageManaInfusionRecipe("4", ModManaInfusionRecipes.manaInkwellRecipe), new PageText("5"),
-						new PageBrew(ModBrewRecipes.warpWardBrew, "6a", "6b"))
-				.setIcon(new ItemStack(ModItems.manaInkwell));
-			else
-				tcIntegration.setLexiconPages(new PageText("0"), new PageText("1"),
-						new PageCraftingRecipe("2", ModCraftingRecipes.recipeHelmetOfRevealing), new PageText("3"),
-						new PageManaInfusionRecipe("4", ModManaInfusionRecipes.manaInkwellRecipe),
-						new PageBrew(ModBrewRecipes.warpWardBrew, "6a", "6b"))
-				.setIcon(new ItemStack(ModItems.manaInkwell));
 		}
 	}
 }
