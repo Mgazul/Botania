@@ -64,7 +64,6 @@ public class Botania {
 	public static boolean bcApiLoaded = false;
 	public static boolean bloodMagicLoaded = false;
 	public static boolean coloredLightsLoaded = false;
-	public static boolean etFuturumLoaded = false;
 
 	@Instance(LibMisc.MOD_ID)
 	public static Botania instance;
@@ -82,7 +81,6 @@ public class Botania {
 		bcApiLoaded = Loader.isModLoaded("buildcraftlib");
 		bloodMagicLoaded = Loader.isModLoaded("bloodmagic"); // Psh, noob
 		coloredLightsLoaded = Loader.isModLoaded("easycoloredlights");
-		etFuturumLoaded = Loader.isModLoaded("etfuturum");
 
 		BotaniaAPI.internalHandler = new InternalMethodHandler();
 
